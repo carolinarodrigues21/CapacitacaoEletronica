@@ -87,6 +87,8 @@ def raiz_quadrada(x):
   Output
   sqrt(x)
   """
+  if x<0:
+    print("não é possível achar a raiz real de um número negativo")
   return np.sqrt(x)
   
 #seno
