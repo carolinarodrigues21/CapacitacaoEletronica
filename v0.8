@@ -1,0 +1,20 @@
+#fatorial
+def fatorial(x):
+  """
+  Função que calcula o fatoria de x
+
+  Input
+  -------
+  x = float
+
+  Output
+  ------
+  x!
+  """
+  resultado=1
+  contador=1
+
+  while contador <= x:
+      resultado *= contador      #começa no 1 e multiplica por 2,3,... ate chegar ao numero desejado, gerando o fatorial
+      contador += 1
+  return resultado
