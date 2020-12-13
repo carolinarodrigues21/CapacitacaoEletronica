@@ -1,17 +1,17 @@
-import numpy as np  #biblioteca importada 
+# -*- coding: utf-8 -*-  
 
-#Soma
+import numpy as np    #biblioteca importada 
+
+#soma
 def soma(a,b):
   """
   Função para realizar uma soma
-
-  Input
   -------
+  Input
   a = float, primeiro numero
   b = float, segundo numero
-
-  Output
   ------
+  Output
   a + b
   """
   return a + b
@@ -20,30 +20,26 @@ def soma(a,b):
 def subtracao(a,b):
   """
   Função para realizar uma subtração
-
-  Input
   -------
+  Input
   a = float, primeiro numero
   b = float, segundo numero
-
-  Output
   ------
+  Output
   a - b
   """
   return a - b
   
-  #multiplicacao
+  #multiplicação
   def multiplicacao(a,b):
   """
   Função para realizar uma multiplicação
-
-  Input
   -------
+  Input
   a = float, primeiro numero
   b = float, segundo numero
-
-  Output
   ------
+  Output
   a*b
   """
   return a*b
@@ -52,17 +48,15 @@ def subtracao(a,b):
   def divisao(a,b):
   """
   Função para realizar uma divisão
-
-  Input
   -------
+  Input
   a = float, numerador
   b = float, denominador
-
-  Output
   ------
+  Output
   a/b
   """
-  if b == 0:
+  if b == 0:   
     print("não é possível calcular essa divisão")
   else:
     r = a/b
@@ -72,31 +66,25 @@ def subtracao(a,b):
 def potencia(a,b):
   """
   Função que eleva um número a uma potencia desejada
-
-  Input
   -------
+  Input
   a = float, base
-  b = float, potencia
-
-  Output
+  b = float, potência
   ------
+  Output
   a**b
   """
   return a**b
-  
-  import numpy as np 
 
 #raiz
 def raiz_quadrada(x):
   """
   Função que calcula a raiz quadrada de x
-
-  Input
   -------
+  Input
   x = float
-
-  Output
   ------
+  Output
   sqrt(x)
   """
   return np.sqrt(x)
@@ -105,29 +93,25 @@ def raiz_quadrada(x):
 def seno(x):
   """
   Função que calcula o seno do angulo x em graus
-
-  Input
   -------
+  Input
   x = float
-
-  Output
   ------
+  Output
   seno(x)
   """
-  s = np.radians(x)
+  s = np.radians(x) #converte o número para radianos para poder fazer o cálculo com a função da biblioteca
   return np.sin(s)
   
   #cosseno
   def cosseno(x):
   """
   Função que calcula o cosseno do angulo x em graus
-
-  Input
   -------
+  Input
   x = float
-
+  -------
   Output
-  ------
   cos(x)
   """
   c = np.radians(x)
@@ -137,13 +121,11 @@ def seno(x):
 def tangente(x):
   """
   Função que calcula a tangente do angulo x em graus
-
-  Input
   -------
+  Input
   x = float
-
+  -------
   Output
-  ------
   tan(x)
   """
   t = np.radians(x)
@@ -153,20 +135,17 @@ def tangente(x):
 def fatorial(x):
   """
   Função que calcula o fatoria de x
-
-  Input
   -------
+  Input
   x = float
-
+  -------
   Output
-  ------
   x!
   """
-  resultado=1
+  fat=1
   contador=1
 
   while contador <= x:
-      resultado *= contador      #começa no 1 e multiplica por 2,3,... ate chegar ao numero desejado, gerando o fatorial
+      fat *= contador    #começa no 1 e multiplica por 2,3,... até chegar ao numero desejado, gerando seu fatorial
       contador += 1
   return resultado
-
